@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="text">
+            <p>gmail</p>
+            <p>image</p>
+            <button type="submit" value="submit">sign in </button>
+        </div>
+       
+        <div id="img">
+        <img src="googlelogo_color_272x92dp.png" height="200px" width="400px">
+        </div>
+        
+        <div class="body">
+        <div class="scarch">
+            <i class="fa fa-search"></i>
+            <input class="placeholder" type="text" id="searchInput" placeholder="scarch here">
+            <input class="button" type="submit" value="search" onclick="redirectToGoogle()">
+         
+        </div></div>
+        <div class="box">
+            <div class="box1">Google scarch</div>
+            <div class="box2">i'm feeling lucky</div>
+        </div>
+        <div class="para">
+            <p class="para1">google offered in:</p>
+<p class="para2">हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ</p>
+</div>
+<script>
+    function redirectToGoogle() {
+      var searchTerm = document.getElementById("searchInput").value;
+      if (searchTerm.trim() !== "") {
+        window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(searchTerm);
+      } else {
+        alert("Please enter a search term!");
+      }
+    }
+    </script>
+    
+    </body>
+</html>
